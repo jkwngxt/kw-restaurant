@@ -2,10 +2,16 @@ import {LoginFormCard} from "@/components/login-form-card";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <LoginFormCard />
-      </ main>
-    </div>
+      <div
+          className="relative min-h-screen w-full flex flex-col justify-center items-center bg-cover bg-center">
+          <img src="/images/bg.jpg" alt="Restaurant background" className="absolute inset-0 object-cover w-full h-full" />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70 z-0" />
+
+          <div className="relative  w-fit">
+              <LoginFormCard />
+          </div>
+      </div>
   );
 }
