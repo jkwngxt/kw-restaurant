@@ -1,6 +1,6 @@
 import {LoginFormCard} from "@/components/login-form-card";
 
-export default function Home() {
+export default function LoginPage() {
   return (
       <div
           className="relative min-h-screen w-full flex flex-col justify-center items-center bg-cover bg-center">
