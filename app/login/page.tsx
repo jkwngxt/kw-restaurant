@@ -1,5 +1,4 @@
 import {LoginFormCard} from "@/components/login-form-card";
-import {Switch} from "@/components/ui/switch";
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/70 z-0" />
 
           <div className="relative  w-fit">
-              <Switch />
+              <LoginFormCard />
           </div>
       </div>
   );

@@ -12,7 +12,7 @@ import SmallFooter from "@/components/footers/small-footer";
 
 export function LoginFormCard() {
     return (
-        <Card className="w-80 md:w-[360px] p-10 border-white ">
+        <Card className="w-80 md:w-[360px] p-10 border-white bg-black/30 backdrop-blur-sm">
             <CardHeader className="p-0">
                 <img
                     src="/images/logo-wide-white.png"
@@ -27,7 +27,7 @@ export function LoginFormCard() {
                             id="email"
                             placeholder="Email"
                             type="email"
-                            className="w-full h-[42px] md:h-[46px] px-2.5 rounded-lg bg-white placeholder-gray-400 text-black"
+                            className="w-full h-[42px] md:h-[46px] px-2.5 bg-white placeholder-gray-200 text-black"
                             required
                         />
 
@@ -35,13 +35,14 @@ export function LoginFormCard() {
                             id="password"
                             placeholder="Password"
                             type="password"
-                            className="w-full h-[42px] md:h-[46px] px-2.5 rounded-lg bg-white placeholder-gray-400 text-black"
+                            className="w-full h-[42px] md:h-[46px] px-2.5 bg-white placeholder-gray-400 text-black"
                             required
                         />
 
+
                     <Button  type="submit"
-                             className=" cursor-pointer rounded-lg px-6 py-2
-                                bg-white text-black font-bold text-base">
+                             className=" cursor-pointer px-6 py-2
+                                bg-white text-black font-bold text-base hover:bg-white">
                         Log in
                     </Button>
                 </form>
