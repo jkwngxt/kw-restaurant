@@ -1,5 +1,6 @@
+import {LoginFormCard} from "@/components/login-form-card";
 
-export default function Home() {
+export default function LoginPage() {
   return (
       <div
           className="relative min-h-screen w-full flex flex-col justify-center items-center bg-cover bg-center">
@@ -9,7 +10,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/70 z-0" />
 
           <div className="relative  w-fit">
-              Hello
+              <LoginFormCard />
           </div>
       </div>
   );
